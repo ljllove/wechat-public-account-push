@@ -74,62 +74,35 @@ export const config = {
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
       horoscopeDateType: '今日',
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
-      openUrl: "https://wangxinleo.cn",
+      openUrl: "https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index",
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {"type": "你的生日", "name": "美女", "year": "2002", "date": "09-26"},
-        {"type": "第一次认识", "name": "认识你的", "year": "2020", "date": "10-17"},
+        {"type": "*生日", "name": "美女", "year": "2002", "date": "09-26"},
+        {"type": "节日", "name": "认识你的", "year": "2020", "date": "10-17"},
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {"type": "锦乐的生日", "name": "锦乐", "year": "2002", "date": "11-29"},
+        {"type": "生日", "name": "锦乐", "year": "2002", "date": "11-29"},
         {"type": "节日", "name": "被搭讪纪念日", "year": "2020", "date": "10-17"},
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
         // 在一起的日子
         {"keyword": "love_day", date: "2020-10-17"},
-        // 结婚纪念日
-        {"keyword": "marry_day", date: "2022-09-09"},
-        // 退伍日
-        {"keyword": "ex_day", date: "2022-09-10"},
       ]
     },
     {
-      name: "老婆1",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: "https://wangxinleo.cn",
+      name: "美女，早上好",
+      id: "o40xF6n12-buigPVWXBgXBIIfbsE",
+      useTemplateId: "o40xF6n12-buigPVWXBgXBIIfbsE",
+      province: "天津",
+      city: "天津",
+      horoscopeDate: '09-26',
+      horoscopeDateType: '今日',
+      openUrl: "https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index",
       festivals: [],
       customizedDateList: []
     },
-    {
-      name: "老婆2",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
-    },
-    {
-      name: "老婆3",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
-    },
+   
     // 你可以不断按格式往下增加
     // ...
   ],
